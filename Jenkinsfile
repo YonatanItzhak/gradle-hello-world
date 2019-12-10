@@ -5,7 +5,7 @@ node('master') {
   }
   stage('Build'){
     sh "${grdlHome}/bin/gradle build"
-    sh "cd **/build/test-results/*"
+    sh "cd **/build/test-results/junit-platform"
     sh "touch *.xml"
 
   }
