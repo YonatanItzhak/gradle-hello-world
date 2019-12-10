@@ -7,8 +7,6 @@ node('master') {
     sh "${grdlHome}/bin/gradle build"
     sh "cd **/build/test-results/*"
     sh "touch *.xml"
-    
-    cd path/to/test/reports
 
   }
   stage('Unit-test'){
