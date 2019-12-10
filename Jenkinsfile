@@ -5,6 +5,11 @@ node('master') {
   }
   stage('Build'){
     sh "${grdlHome}/bin/gradle build"
+    sh "cd **/build/test-results/*"
+    sh "touch *.xml"
+    
+    cd path/to/test/reports
+
   }
   stage('Unit-test'){
     sh "${grdlHome}/bin/gradle test"
