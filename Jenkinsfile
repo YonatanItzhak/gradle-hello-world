@@ -20,7 +20,7 @@ node('slave1') {
 // parallel tests
     }
   catch(ex) {echo 'there were failures'  }
-  stage(‘Post’) {
+  stage('Post') {
     addBadge icon: '', id: '', link: '', text: '' 
   }
 }
