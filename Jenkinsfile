@@ -21,6 +21,6 @@ node('slave1') {
     }
   catch(ex) {echo 'there were failures'  }
   stage('Post') {
-    addBadge icon: '', id: '', link: '', text: 'myBadge'
+    addBadge icon: 'success.gif', id: '', link: '', text: 'myBadge'
   }
 }
