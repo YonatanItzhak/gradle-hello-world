@@ -21,6 +21,6 @@ node('slave1') {
     }
   catch(ex) {echo 'there were failures'  }
   stage(‘Post’) {
-    echo 'I will always love you!'  
+    addBadge icon: '', id: '', link: '', text: '' 
   }
 }
